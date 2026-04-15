@@ -35,8 +35,6 @@ class Node:
 # penjelasan 
 
 
-
-
 # ============================================
 # Nama  : Novia Siti Zahra
 # Kelas : B1

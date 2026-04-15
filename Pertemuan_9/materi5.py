@@ -2,8 +2,9 @@
 # Nama  : Novia Siti Zahra
 # Kelas : B1
 # NIM   : J0403251059
-# Latihan 2 : membuat binary tree sederhana
+# Latihan 5 : membuat traversal postorder
 # ============================================
+
 
 # class node digunakan untuk dasar dari tree
 
@@ -13,6 +14,14 @@ class Node:
         self.left = None # child kiri
         self.right = None # child kanan
 
+# membuat traversal postorder: left -> right -> root
+def postorder(node):
+    if node is not None:
+        postorder(node.left)
+        postorder(node.right)
+        print(node.data, end=" ") # root
+
+        # membuat tree
         # membuat root
         root = Node("A")
 
@@ -24,11 +33,8 @@ class Node:
         root.left.left = Node("D")
         root.left.right = Node("E")
         
-        # menampilkan isi node
-        print("Data pada root", root.data)
-        print("Data child kiri root", root.left.data)
-        print("Data child kanan root", root.right.data)
-        print("Child kiri dari B: ", root.left.left.data)
-        print("Child kanan dari B: ", root.left.right.data)
-# lanjutkan keseluruhan tree
-# penjelasan 
+        # menjalankan traversal postorder
+        print("Hasil traversal postorder: ")
+        postorder(root)
+
+        # penjelasan

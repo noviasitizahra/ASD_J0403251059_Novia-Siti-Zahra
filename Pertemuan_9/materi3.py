@@ -2,17 +2,20 @@
 # Nama  : Novia Siti Zahra
 # Kelas : B1
 # NIM   : J0403251059
-# Latihan 3 : membuat binary search
+# Latihan 3 : membuat traversal preorder
 # ============================================
+
 class Node:
     def __init__(self, data):
         self.data = data
         self.left = None
         self.right = None
 
-    def preorder(node):
+def preorder(node):
         if node is not None:
-
+            print(node.data, end=" ")
+            print(node.left)
+            print(node.right)
 
         # membuat root
         root = Node("A")

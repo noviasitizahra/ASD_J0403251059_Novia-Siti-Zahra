@@ -26,8 +26,8 @@ class Node:
         
         # menampilkan isi node
         print("Data pada root", root.data)
-        print("Data child kiri root", root.left.data)
-        print("Data child kanan root", root.right.data)
+        print("Child kiri root", root.left.data)
+        print("Child kanan root", root.right.data)
         print("Child kiri dari B: ", root.left.left.data)
         print("Child kanan dari B: ", root.left.right.data)
 # lanjutkan keseluruhan tree

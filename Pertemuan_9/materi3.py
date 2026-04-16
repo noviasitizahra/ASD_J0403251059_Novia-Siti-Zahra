@@ -14,8 +14,8 @@ class Node:
 def preorder(node):
         if node is not None:
             print(node.data, end=" ")
-            print(node.left)
-            print(node.right)
+            preorder(node.left)
+            preorder(node.right)
 
         # membuat root
         root = Node("A")

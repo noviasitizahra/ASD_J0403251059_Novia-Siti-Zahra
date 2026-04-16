@@ -38,3 +38,12 @@ def postorder(node):
         postorder(root)
 
         # penjelasan
+        '''
+        Traversal postorder adalah cara membaca pohon biner dengan urutan anak kiri → anak kanan → root.
+        Artinya, setiap kali kita berada di sebuah node, kita harus masuk dulu ke cabang kiri sampai habis, lalu lanjut ke cabang kanan, dan setelah itu baru mencetak data dari node sekarang. 
+        Dengan pola ini, root akan selalu dicetak paling akhir setelah semua anak-anaknya selesai dibaca.
+        Sebagai contoh, jika kita punya pohon dengan root A, anak kiri B, anak kanan C, lalu B punya anak D dan E, serta C punya anak F dan G, maka hasil traversal postorder adalah D E B F G C A.
+        Urutan ini muncul karena kita selalu mendahulukan cabang kiri, kemudian cabang kanan, dan terakhir root. 
+        Traversal postorder sering digunakan ketika kita ingin menghapus atau memproses pohon dari bawah ke atas, karena setiap node baru diproses setelah semua anak-anaknya selesai.
+        Dengan begitu, traversal postorder memberikan cara sistematis untuk membaca pohon dari bagian paling bawah hingga ke puncak.
+        '''

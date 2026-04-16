@@ -23,12 +23,21 @@ class Node:
         # membuat child level 2
         root.left.left = Node("D")
         root.left.right = Node("E")
+        root.right.left = Node("F")
+        root.right.right = Node("G")
         
         # menampilkan isi node
-        print("Data pada root", root.data)
-        print("Child kiri root", root.left.data)
-        print("Child kanan root", root.right.data)
+        print("Data pada root: ", root.data)
+        print("Child kiri root: ", root.left.data)
+        print("Child kanan root: ", root.right.data)
         print("Child kiri dari B: ", root.left.left.data)
         print("Child kanan dari B: ", root.left.right.data)
-# lanjutkan keseluruhan tree
+        print("Child kiri dari C: ", root.right.left.data)
+        print("Child kanan dari C: ", root.right.right.data)
+
 # penjelasan 
+# 1. Node itu ibarat titik atau simpul dalam pohon. Setiap node bisa punya anak kiri (left) dan anak kanan (right)
+# 2. Root adalah node paling atas, pusat dari pohon. Di sini root kita adalah A.
+# 3. Dari root, kita bisa bikin cabang ke kiri (B) dan ke kanan (C).
+# 4. Lalu dari B, kita bikin anak lagi yaitu D (kiri) dan E (kanan).
+# 5. Dari C, kita juga bikin anak yaitu F (kiri) dan G (kanan).

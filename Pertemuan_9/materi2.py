@@ -13,27 +13,27 @@ class Node:
         self.left = None # child kiri
         self.right = None # child kanan
 
-        # membuat root
-        root = Node("A")
+# membuat root
+root = Node("A")
 
-        # membuat child level 1
-        root.left = Node("B")
-        root.right = Node("C")
+# membuat child level 1
+root.left = Node("B")
+root.right = Node("C")
 
-        # membuat child level 2
-        root.left.left = Node("D")
-        root.left.right = Node("E")
-        root.right.left = Node("F")
-        root.right.right = Node("G")
+# membuat child level 2
+root.left.left = Node("D")
+root.left.right = Node("E")
+root.right.left = Node("F")
+root.right.right = Node("G")
         
-        # menampilkan isi node
-        print("Data pada root: ", root.data)
-        print("Child kiri root: ", root.left.data)
-        print("Child kanan root: ", root.right.data)
-        print("Child kiri dari B: ", root.left.left.data)
-        print("Child kanan dari B: ", root.left.right.data)
-        print("Child kiri dari C: ", root.right.left.data)
-        print("Child kanan dari C: ", root.right.right.data)
+# menampilkan isi node
+print("Data pada root: ", root.data)
+print("Child kiri root: ", root.left.data)
+print("Child kanan root: ", root.right.data)
+print("Child kiri dari B: ", root.left.left.data)
+print("Child kanan dari B: ", root.left.right.data)
+print("Child kiri dari C: ", root.right.left.data)
+print("Child kanan dari C: ", root.right.right.data)
 
 # penjelasan 
 # 1. Node itu ibarat titik atau simpul dalam pohon. Setiap node bisa punya anak kiri (left) dan anak kanan (right)

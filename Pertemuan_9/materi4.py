@@ -15,7 +15,7 @@ class Node:
 def inorder(node):
     if node is not None:
         inorder(node.left)
-        print(node.data, end="")
+        print(node.data, end=" ")
         inorder(node.right)
 
 # membuat tree

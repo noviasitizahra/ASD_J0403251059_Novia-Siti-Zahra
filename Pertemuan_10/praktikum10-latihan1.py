@@ -1,3 +1,12 @@
+#============================================
+# Latihan : binary search tree (BST)
+# ===========================================
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
 
 # alur fungsi insert ------
 def insert(root, data):
@@ -5,7 +14,20 @@ def insert(root, data):
         return Node(data)
     
     if data < root.data:
-        
+        root.left = insert(root.left, data)
+    elif data > root.data:
+        root.right = insert(root.right, data)
+    return root
+
+# mengisi data BST
+root = None
+data_list = [50, 38, 78, 20, 40, 60, 88]
+
+for data in data_list:
+    root = insert(root, data)
+
+print("BST berhasil dibuat")
+
 #============================================
 # Latihan 2 : traversal inorder
 # ===========================================

@@ -11,7 +11,7 @@
 # Class Node untuk menyimpan data BST 
 class Node: 
     def __init__(self, data): 
-        self.data = data      # nilai pada node (menyimpan nilai pada node)
+        self.data = data      # menyimpan nilai pada node (menyimpan nilai pada node)
         self.left = None      # child kiri (lebih kecil dari data)
         self.right = None     # child kanan (lebih besar dari data)
 

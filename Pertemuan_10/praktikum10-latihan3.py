@@ -8,23 +8,23 @@
 # Latihan 5 : rotasi kiri pada BST tidak seimbang
 # ================================================
 
-# Class Node 
+# Class Node untuk membuat node pada tree
 class Node: 
     def __init__(self, data): 
-        self.data = data 
-        self.left = None 
-        self.right = None 
+        self.data = data    # menyimpan nilai pada node
+        self.left = None    # child kiri (lebih kecil dari data)
+        self.right = None   # child kanan (lebih besar dari data)
  
  
 # Fungsi preorder untuk melihat isi tree 
 def preorder(root): 
     if root is not None: 
-        print(root.data, end=" ") 
-        preorder(root.left) 
-        preorder(root.right) 
+        print(root.data, end=" ")   # tampilkan root dulu
+        preorder(root.left)         # lalu ke kiri
+        preorder(root.right)        # lalu ke kanan
  
  
-# Fungsi untuk menampilkan struktur tree 
+# Fungsi untuk menampilkan struktur tree (biar keliatan bentuknya)
 def tampil_struktur(root, level=0, posisi="Root"): 
     if root is not None: 
         print("   " * level + f"{posisi}: {root.data}") 
@@ -55,16 +55,16 @@ root.right = Node(20)
 root.right.right = Node(30) 
 
 print("Preorder sebelum rotasi kiri:") 
-preorder(root) 
+preorder(root)  # lihat isi tree sebelum rotasi
 
 print("\n\nStruktur sebelum rotasi kiri:") 
-tampil_struktur(root) 
+tampil_struktur(root)   # lihat bentuk tree sebelum rotasi
 
 # Melakukan rotasi kiri pada root 
 root = rotate_left(root) 
 
 print("\nPreorder sesudah rotasi kiri:") 
-preorder(root) 
+preorder(root)  # lihat isi tree setelah rotasi
 
 print("\n\nStruktur sesudah rotasi kiri:") 
-tampil_struktur(root) 
+tampil_struktur(root)       # lihat bentuk tree setelah rotasi 
